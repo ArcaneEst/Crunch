@@ -24,20 +24,20 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: Quartz/package-lock.json  # Указываем путь к lock-файлу внутри папки Quartz
+          cache-dependency-path: Quartz/package-lock.json
 
       - name: Install dependencies
-        working-directory: Quartz  # Переходим в папку Quartz
+        working-directory: Quartz
         run: npm ci
 
       - name: Build Quartz
-        working-directory: Quartz  # Собираем проект внутри папки Quartz
-        run: npx quartz build
+        working-directory: Quartz
+        run: node quartz/bootstrap-cli.mjs build
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: Quartz/public  # Забираем результат сборки из папки Quartz/public
+          path: Quartz/public
 
   deploy:
     environment:
