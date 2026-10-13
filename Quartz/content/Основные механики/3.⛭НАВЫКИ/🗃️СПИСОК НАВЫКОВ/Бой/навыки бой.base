@@ -1,0 +1,10 @@
+filters:
+  and:
+    - file.inFolder("Основные механики/3.⛭НАВЫКИ/🗃️СПИСОК НАВЫКОВ/Бой")
+    - file.ext != "base"
+views:
+  - type: list
+    name: Нумерованный список
+    order:
+      - file.name
+    markers: none

@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "plugins": {
+    "bases-page": {
+      "source": "github:quartz-community/bases-page",
+      "resolved": "https://github.com/quartz-community/bases-page.git",
+      "commit": "5c729d1c6be7d89b05ad35fbf28f0b660ce17968",
+      "installedAt": "2026-09-30T17:01:16.895Z"
+    }
+  }
+}

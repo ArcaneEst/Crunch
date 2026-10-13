@@ -1,0 +1,10 @@
+filters:
+  and:
+    - file.inFolder("Основные механики/4.✪МАГИЯ/🗃️СПИСОК ЗАКЛИНАНИЙ/Ранг 1")
+    - file.ext != "base"
+views:
+  - type: list
+    name: Нумерованный список
+    order:
+      - file.name
+    markers: number

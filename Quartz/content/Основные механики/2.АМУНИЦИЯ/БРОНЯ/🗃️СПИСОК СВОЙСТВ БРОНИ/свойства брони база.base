@@ -1,0 +1,10 @@
+filters:
+  and:
+    - file.inFolder("Основные механики/2.АМУНИЦИЯ/БРОНЯ/🗃️СПИСОК СВОЙСТВ БРОНИ")
+    - file.ext != "base"
+views:
+  - type: list
+    name: Нумерованный список
+    markers: number
+    order:
+      - file.name

@@ -1,0 +1,10 @@
+filters:
+  and:
+    - file.inFolder("Основные механики/1.ДЕЙСТВИЯ И СПОСОБНОСТИ/🗃️БАЗОВЫЕ СПОСОБНОСТИ/4.Финт")
+    - file.ext != "base"
+views:
+  - type: list
+    name: Нумерованный список
+    order:
+      - file.name
+    markers: none
