@@ -1,0 +1,10 @@
+filters:
+  and:
+    - file.inFolder("Ресурсы мастера/Механика исследований/Фазы дня")
+    - file.ext != "base"
+views:
+  - type: list
+    name: Нумерованный список
+    markers: none
+    order:
+      - file.name
