@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: false  # Отключаем проверку подмодулей (решает ошибку exit code 128)
 
       - name: Setup Node
         uses: actions/setup-node@v4
