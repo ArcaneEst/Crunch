@@ -6,3 +6,6 @@ Quartz/public/
 
 # Obsidian workspace settings
 Quartz/content/.obsidian/
+
+.quartz/plugins/
+.quartz-cache/
