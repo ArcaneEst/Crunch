@@ -35,7 +35,7 @@ jobs:
 
       - name: Install Quartz plugins
         working-directory: Quartz
-        run: npx quartz plugin install
+        run: node quartz/bootstrap-cli.mjs plugin install
 
       - name: Build Quartz
         working-directory: Quartz
