@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write   
   pages: write
   id-token: write
 
@@ -19,6 +19,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Fix Git safe directory
+        run: git config --global --add safe.directory /github/workspace
 
       - name: Setup Node
         uses: actions/setup-node@v4
