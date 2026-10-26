@@ -6,6 +6,12 @@
       "resolved": "https://github.com/quartz-community/bases-page.git",
       "commit": "5c729d1c6be7d89b05ad35fbf28f0b660ce17968",
       "installedAt": "2026-09-30T17:01:16.895Z"
+    },
+    "explorer": {
+      "source": "github:quartz-community/explorer",
+      "resolved": "https://github.com/quartz-community/explorer.git",
+      "commit": "bf8e93766283caab163fc11bc8b5904790a769bc",
+      "installedAt": "2026-10-26T19:10:18.093Z"
     }
   }
 }
