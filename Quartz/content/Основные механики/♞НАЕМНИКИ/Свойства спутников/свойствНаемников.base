@@ -1,0 +1,10 @@
+filters:
+  and:
+    - file.inFolder("Основные механики/♞НАЕМНИКИ/Свойства спутников")
+    - file.ext != "base"
+views:
+  - type: list
+    name: Нумерованный список
+    order:
+      - file.name
+    markers: number

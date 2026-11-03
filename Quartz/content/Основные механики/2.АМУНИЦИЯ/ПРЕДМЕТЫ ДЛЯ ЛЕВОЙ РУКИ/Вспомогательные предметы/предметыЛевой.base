@@ -1,0 +1,10 @@
+filters:
+  and:
+    - file.inFolder("Основные механики/2.АМУНИЦИЯ/ПРЕДМЕТЫ ДЛЯ ЛЕВОЙ РУКИ/Вспомогательные предметы")
+    - file.ext != "base"
+views:
+  - type: list
+    name: Нумерованный список
+    order:
+      - file.name
+    markers: number
