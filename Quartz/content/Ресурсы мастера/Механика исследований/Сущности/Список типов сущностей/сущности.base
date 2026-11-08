@@ -1,0 +1,10 @@
+filters:
+  and:
+    - file.inFolder("Ресурсы мастера/Механика исследований/Сущности/Список типов сущностей")
+    - file.ext != "base"
+views:
+  - type: list
+    name: Нумерованный список
+    order:
+      - file.name
+    markers: number
