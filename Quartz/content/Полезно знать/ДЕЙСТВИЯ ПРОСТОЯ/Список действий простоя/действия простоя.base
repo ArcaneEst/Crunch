@@ -1,0 +1,10 @@
+filters:
+  and:
+    - file.inFolder("Полезно знать/ДЕЙСТВИЯ ПРОСТОЯ/Список действий простоя")
+    - file.ext != "base"
+views:
+  - type: list
+    name: Нумерованный список
+    order:
+      - file.name
+    markers: none
